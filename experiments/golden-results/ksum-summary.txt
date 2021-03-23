@@ -14,6 +14,11 @@ Error message: Wrong component nkind
 Nkind: N_Pragma
 --
 Occurs: 1 times
+Calling function: Do_Subprogram_Specification
+Error message: Param Sort subtype mark has no etype
+Nkind: N_Access_Definition
+--
+Occurs: 1 times
 Calling function: Process_Declaration
 Error message: Representation clause unsupported: read
 Nkind: N_Attribute_Definition_Clause
@@ -300,5 +305,5 @@ Raw compiler error message:
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure sinfo.adb:1183                         |
+| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
 Error detected at REDACTED

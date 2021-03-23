@@ -2060,12 +2060,12 @@ Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:756                      |
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:758                      |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:756                      |
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:758                      |
 Error detected at REDACTED
 --
 Occurs: 1 times
@@ -2100,7 +2100,7 @@ Error detected at REDACTED
 --
 Occurs: 22 times
 <========================>
-raised SYSTEM.ASSERTIONS.ASSERT_FAILURE : tree_walk.adb:756
+raised SYSTEM.ASSERTIONS.ASSERT_FAILURE : tree_walk.adb:758
 
 --
 Occurs: 17 times
@@ -2130,7 +2130,7 @@ raised SYSTEM.ASSERTIONS.ASSERT_FAILURE : failed precondition from ireps.ads:157
 --
 Occurs: 1 times
 <========================>
-raised SYSTEM.ASSERTIONS.ASSERT_FAILURE : failed postcondition from tree_walk.adb:309
+raised SYSTEM.ASSERTIONS.ASSERT_FAILURE : failed postcondition from tree_walk.adb:311
 
 --
 Occurs: 1 times

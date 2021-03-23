@@ -280,9 +280,11 @@ package body Tree_Walk is
 
    function Do_Subprogram_Specification (N : Node_Id) return Irep
      with Pre  => Nkind (N) in N_Subprogram_Specification |
-                               N_Access_Procedure_Definition |
-                               N_Access_Function_Definition,
-        Post => Kind (Do_Subprogram_Specification'Result) = I_Code_Type;
+     N_Access_Procedure_Definition |
+       N_Access_Function_Definition,
+       Post => Kind (Do_Subprogram_Specification'Result) in
+     I_Code_Type | I_Nil;
+   --  includes I_Nil as currently has unsupported functionality
 
    procedure Do_Subtype_Declaration (N : Node_Id)
    with Pre => Nkind (N) = N_Subtype_Declaration;
@@ -5689,6 +5691,14 @@ package body Tree_Walk is
                  (N,
                   "Do_Subprogram_Specification",
                   "Param iter is not an access parameter or has no etype");
+            end if;
+            if (Nkind (Param_Sort) = N_Access_Definition) and then
+              (Nkind (Subtype_Mark (Param_Sort)) = N_Empty)
+            then
+               return Report_Unhandled_Node_Type
+                 (Param_Sort,
+                  "Do_Subprogram_Specification",
+                  "Param Sort subtype mark has no etype");
             end if;
             declare
                Is_Out : constant Boolean := Out_Present (Param_Iter);
