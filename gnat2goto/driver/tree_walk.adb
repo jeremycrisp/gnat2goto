@@ -283,8 +283,8 @@ package body Tree_Walk is
      N_Access_Procedure_Definition |
        N_Access_Function_Definition,
        Post => Kind (Do_Subprogram_Specification'Result) in
-     I_Code_Type | I_Nil;
-   --  includes I_Nil as currently has unsupported functionality
+     I_Code_Type | I_Nil_Type;
+   --  includes I_Nil_Type as currently has unsupported functionality
 
    procedure Do_Subtype_Declaration (N : Node_Id)
    with Pre => Nkind (N) = N_Subtype_Declaration;
@@ -7193,9 +7193,14 @@ package body Tree_Walk is
       Subprog_Name : constant Symbol_Id :=
         Intern (Unique_Name (Subprog_Defining_Entity));
    begin
-      New_Subprogram_Symbol_Entry (Subprog_Name   => Subprog_Name,
-                                   Subprog_Type   => Subprog_Type,
-                                   A_Symbol_Table => Global_Symbol_Table);
+      if Kind (Subprog_Type) = I_Nil_Type then
+         Report_Unhandled_Node_Empty (N, "Register_Subprogram_Specification",
+                                      "Attempt to register Nil_Type");
+      else
+         New_Subprogram_Symbol_Entry (Subprog_Name   => Subprog_Name,
+                                      Subprog_Type   => Subprog_Type,
+                                      A_Symbol_Table => Global_Symbol_Table);
+      end if;
    end Register_Subprogram_Specification;
 
    -------------------------------
