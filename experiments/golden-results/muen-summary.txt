@@ -3,7 +3,7 @@ Calling function: Process_Pragma_Declaration
 Error message: pragma Import: Multi-language analysis unsupported
 Nkind: N_Pragma
 --
-Occurs: 332 times
+Occurs: 333 times
 Calling function: Do_Derived_Type_Definition
 Error message: record extension unsupported
 Nkind: N_Derived_Type_Definition
@@ -78,7 +78,17 @@ Calling function: Process_Pragma_Declaration
 Error message: Unknown pragma: stream_convert
 Nkind: N_Pragma
 --
-Occurs: 37 times
+Occurs: 41 times
+Calling function: Do_Subprogram_Specification
+Error message: Param Sort subtype mark has no etype
+Nkind: N_Access_Definition
+--
+Occurs: 41 times
+Calling function: Register_Subprogram_Specification
+Error message: Attempt to register Nil_Type
+Nkind: N_Procedure_Specification
+--
+Occurs: 38 times
 Calling function: Do_Expression
 Error message: Unknown expression kind
 Nkind: N_Extension_Aggregate
@@ -97,11 +107,6 @@ Occurs: 34 times
 Calling function: Process_Pragma_Declaration
 Error message: Unknown pragma: finalize_storage_only
 Nkind: N_Pragma
---
-Occurs: 26 times
-Calling function: Do_Subprogram_Specification
-Error message: Param Sort subtype mark has no etype
-Nkind: N_Access_Definition
 --
 Occurs: 20 times
 Calling function: Do_Operator_General
@@ -162,6 +167,11 @@ Occurs: 10 times
 Calling function: Do_Itype_Definition
 Error message: Unknown Ekind E_RECORD_SUBTYPE_WITH_PRIVATE
 Nkind: N_Defining_Identifier
+--
+Occurs: 10 times
+Calling function: Do_Type_Definition
+Error message: Wrong Nkind or wrong discs
+Nkind: N_Derived_Type_Definition
 --
 Occurs: 9 times
 Calling function: Do_Object_Declaration
@@ -3175,132 +3185,62 @@ Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
-Error detected at REDACTED
---
-Occurs: 1 times
-+===========================GNAT BUG DETECTED==============================+
-| GNU Ada (ada2goto) Assert_Failure failed postcondition from tree_walk.adb:285|
+| GNU Ada (ada2goto) Assert_Failure atree.adb:992                          |
 Error detected at REDACTED
 --
 Occurs: 1 times
@@ -3331,6 +3271,26 @@ Error detected at REDACTED
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
 | GNU Ada (ada2goto) Assert_Failure gnat2goto_itypes.adb:245               |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure sinfo.adb:1183                         |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure sinfo.adb:1183                         |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure sinfo.adb:1183                         |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure sinfo.adb:1183                         |
 Error detected at REDACTED
 --
 Occurs: 1 times
@@ -3381,6 +3341,56 @@ Error detected at REDACTED
 Occurs: 1 times
 +===========================GNAT BUG DETECTED==============================+
 | GNU Ada (ada2goto) Assert_Failure sinfo.adb:2534                         |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
+Error detected at REDACTED
+--
+Occurs: 1 times
++===========================GNAT BUG DETECTED==============================+
+| GNU Ada (ada2goto) Assert_Failure tree_walk.adb:7215                     |
 Error detected at REDACTED
 --
 Occurs: 6 times
